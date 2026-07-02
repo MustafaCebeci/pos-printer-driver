@@ -1,7 +1,7 @@
 {
   "name": "@berbervakti/pos-printer-driver",
-  "version": "0.1.0",
-  "description": "Cross-platform ESC/POS printer driver for Node.js — TCP, Serial, and USB support",
+  "version": "0.1.1",
+  "description": "ESC/POS printer driver for Node.js — TCP, Serial, USB. Prebuilt Windows x64 binary — no build tools needed.",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {

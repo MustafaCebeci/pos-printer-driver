@@ -1,6 +1,6 @@
 # Publishing Guide
 
-This document describes how to publish `pos-printer-driver` to npm and create a GitHub Release **manually** (no CI/CD).
+This document describes how to publish `@berbervakti/pos-printer-driver` to npm and create a GitHub Release **manually** (no CI/CD).
 
 > **Important**: This project does not use GitHub Actions or automated pipelines. You must build native binaries on each target platform yourself.
 
