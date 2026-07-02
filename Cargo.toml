@@ -1,0 +1,13 @@
+[workspace]
+members = ["crates/transport", "crates/protocol", "crates/napi-binding"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Developer"]
+
+[workspace.dependencies]
+thiserror = "1.0"
+log = "0.4"
+env_logger = "0.11"

@@ -1,0 +1,18 @@
+[package]
+name = "pos-printer-napi"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[build-dependencies]
+napi-build = "2.3"
+
+[dependencies]
+napi = { version = "3", features = ["tokio_rt"] }
+napi-derive = "3"
+thiserror.workspace = true
+log.workspace = true
+pos-printer-transport = { path = "../transport" }
+pos-printer-protocol = { path = "../protocol" }

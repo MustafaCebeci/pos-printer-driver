@@ -1,0 +1,27 @@
+# Source code and build artifacts — not needed in the npm package
+crates/
+examples/
+tests/
+target/
+.git/
+.github/
+
+# Config files
+Cargo.toml
+Cargo.lock
+rustfmt.toml
+clippy.toml
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Source documentation
+README.md      # Use the npm-published README.md instead
+CHANGELOG.md
+PUBLISHING.md

@@ -1,0 +1,45 @@
+{
+  "name": "@berbervakti/pos-printer-driver",
+  "version": "0.1.0",
+  "description": "Cross-platform ESC/POS printer driver for Node.js — TCP, Serial, and USB support",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "pos_printer_driver",
+    "triples": {
+      "defaults": true
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "*.node",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "cargo build --release --manifest-path=../../Cargo.toml",
+    "build:debug": "cargo build --manifest-path=../../Cargo.toml",
+    "test": "cargo test --workspace"
+  },
+  "keywords": [
+    "esc-pos",
+    "escpos",
+    "pos-printer",
+    "thermal-printer",
+    "receipt-printer",
+    "napi-rs"
+  ],
+  "author": "MustafaCebeci",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MustafaCebeci/pos-printer-driver.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "3.6.0"
+  }
+}

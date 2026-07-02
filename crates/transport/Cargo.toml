@@ -1,0 +1,16 @@
+[package]
+name = "pos-printer-transport"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+log.workspace = true
+serialport = "4.9"
+nusb = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+# Windows-specific serial support if needed
+
+[target.'cfg(all(unix, not(target_os = "macos")))'.dependencies]
+# Linux-specific serial support
